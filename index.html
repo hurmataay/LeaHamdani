@@ -67,7 +67,7 @@
     font-size: 14px; font-weight: 600; text-decoration: none; opacity: 1 !important;
   }
   .mobile-hide { display: flex; }
-  @media (max-width: 780px) { .mobile-hide { display: none; } }
+  @media (max-width: 780px) { .mobile-hide, nav.links.mobile-hide { display: none; } }
 
   /* ---------- HERO ---------- */
   section.hero { padding: 96px 0 72px; position: relative; overflow: hidden; }
@@ -162,6 +162,7 @@
   .case-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; flex-wrap: wrap; margin-bottom: 6px; }
   .case-title { font-family: var(--serif); font-weight: 600; font-size: clamp(24px, 3vw, 32px); margin: 0; letter-spacing: -0.01em; color: var(--ink); }
   .case-role { font-size: 14px; color: var(--slate); white-space: nowrap; padding-top: 6px; }
+  @media (max-width: 760px) { .case-role { white-space: normal; } }
   .case-note { font-size: 13px; color: var(--slate); font-style: italic; margin: -2px 0 20px; max-width: 620px; }
   .case-tags { margin: 10px 0 20px; display: flex; gap: 8px; flex-wrap: wrap; }
   .tag { font-size: 12.5px; font-weight: 600; padding: 5px 12px; border-radius: 100px; background: rgba(196,181,253,0.14); color: var(--signal); }
@@ -475,6 +476,35 @@
       </div>
     </div>
 
+  </div>
+</section>
+
+<section class="block bordered" id="side-project">
+  <div class="wrap">
+    <div class="section-label"><span class="num">side project</span><h2>Something she built for herself</h2></div>
+    <p class="section-dek">Not a client brief: a product Lea planned, designed, and shipped on her own time, built with an AI coding assistant.</p>
+
+    <div class="case">
+      <div class="case-num">✦</div>
+      <div class="case-body">
+        <div class="case-top">
+          <h3 class="case-title">Building a journal that stays out of the way</h3>
+          <div class="case-role">Product Lead · Words in Silent · built with Claude (AI-assisted)</div>
+        </div>
+        <div class="case-tags"><span class="tag">Product strategy</span><span class="tag">UX writing</span><span class="tag alt">AI-assisted development</span></div>
+        <div class="case-content text-only">
+          <div class="case-copy">
+            <p><b>The problem:</b> most journaling apps turn reflection into a scoreboard, with mood ratings, streaks, and reminders. Lea wanted a quiet place to simply log a day in your own words.</p>
+            <p><b>The approach:</b> she wrote the product plan, then led every design and content decision and tested each build herself, cutting anything that felt like tracking instead of journaling. She also wrote the in-app guide, a support page with crisis resources, and a plain-language privacy policy that's honest about what's stored and who can see it.</p>
+          </div>
+        </div>
+        <a href="https://wordsinsilent.web.app" target="_blank" rel="noopener" style="display:block; margin-top:18px;">
+          <img src="https://wordsinsilent.web.app/og-image.png" alt="Words in Silent: through your mind's eye" loading="lazy" style="width:100%; max-width:560px; border-radius:14px; border:1px solid var(--hair);">
+        </a>
+        <div class="case-result"><b>Result</b>A live, free app that installs on a phone's home screen, works offline, and lets people export their writing as Word, Excel, or CSV files.</div>
+        <p style="margin-top:20px;"><a class="btn small ghost" href="https://wordsinsilent.web.app" target="_blank" rel="noopener">Try it live ↗</a></p>
+      </div>
+    </div>
   </div>
 </section>
 
